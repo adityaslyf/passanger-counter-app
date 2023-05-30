@@ -17,7 +17,7 @@ function increment() {
 // function save (){
 //   count +=1;
 //   let Entries = "Previous Entries:";
-//   let firstEntry = document.getElementById("save-btn")
+//   let firstEntry = document.getElementByjId("save-btn")
 //   firstEntry.innerText = Entries + count;
 //   console.log(firstEntry)
 
@@ -30,8 +30,7 @@ let SaveEl = document.getElementById("entries");
 let special = " " + count + " -\ ";
 SaveEl.innerText += special;
 console.log(count)
-
-
+countEl.textContent = 0;
+count = 0;
 }
-
 
