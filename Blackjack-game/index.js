@@ -1,7 +1,7 @@
 // let firstCard  = Math.floor((Math.random() * 100) + 1); 
 // let secondCard = Math.floor((Math.random() * 100) + 1); 
-let firstCard =5
-let secondCard =getRandom
+let firstCard =getRandom()
+let secondCard =getRandom()
   
   let cards = [firstCard,secondCard]
   let sum = firstCard + secondCard;
@@ -10,10 +10,17 @@ let secondCard =getRandom
 let message = ""
 
 
-function getRandom(){
-return 5;
-}
+function getRandom() {
+  const randomNumber = Math.floor(Math.random() * 12 + 1);
+
+  if (randomNumber === 1) {
+    return 11;
+  } else if (randomNumber >= 11 && randomNumber <= 13) {
+    return 10;
+  } else { return randomNumber}
   
+
+}
  
 // console.log(hasBlackjack)
 // console.log(isAlive)
@@ -59,17 +66,15 @@ message ="You're out of the game! 😭 "
 
 function newCard(){
  
-  let card = 6;
+  let card = getRandom();
   sum+= card;
 cards.push(card)
 console.log(cards)
   renderGame();
-  
 }
 
 
-
-
+njndf
 
 
 
